@@ -1,0 +1,31 @@
+1. Get All employee 
+Method:GET
+URL:http://localhost:8080/api/v1/employees
+
+2.Get selected employee by ID
+Method:GET
+URL:http://localhost:8080/api/v1/employees/1
+
+3.Update selected employee by ID
+Method:PUT
+URL:http://localhost:8080/api/v1/employees/1
+JSON:
+{
+    "firstName": "Sarah",
+    "lastName": "Yunos",
+    "emailId": "sarahyunos@gmail.com"
+}
+
+4.Delete selected employee by ID
+Method:DELETE
+URL:http://localhost:8080/api/v1/employees/1
+
+5.Pagination and Sorting
+Method:DELETE
+URL:http://localhost:8080/api/v1/listPageable?page=0&size=10&sort=firstName
+
+6.Calling 3rd API (calling another project) by selected ID
+Method:GET
+URL:http://localhost:8080/api/v1/employeebenefit/1
+
+
